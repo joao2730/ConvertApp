@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConvertApp</string>
+    <string-array name="monedas">
+        <item>Dólar</item>
+        <item>Euro</item>
+        <item>Peso Chileno</item>
+    </string-array>
+</resources>

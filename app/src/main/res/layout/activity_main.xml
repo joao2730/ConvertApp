@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/monedaActual"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Moneda Actual"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/monedaActualSP"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:entries="@array/monedas"/>
+
+    <TextView
+        android:id="@+id/monedaCambio"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="Moneda Cambio"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/monedaCambioSP"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:entries="@array/monedas" />
+
+    <TextView
+        android:id="@+id/valorCambio"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="Valor a Cambiar"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/valorCambioD"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/procesarCambioBT"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickConvertir"
+            android:text="Procesar Cambio" />
+
+        <Button
+            android:id="@+id/acercaDeBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Acerca De" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultadoTV"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+</LinearLayout>
